@@ -21,7 +21,7 @@ nameSelector("Linda");
 // name of the company and the range itself (if the numbers passed in are 90000 and 110000, the pay range is 20000).
 
 function reportPayWages(company, minimum, maximum) {
-var wageRange = (maximum - minimum);
+var wageRange = maximum - minimum;
     return `Here at ${company}, we start our employees wages off at about a $${wageRange} range.`;
 }
     console.log(reportPayWages("Mars", 90000 ,100000));
@@ -31,14 +31,17 @@ var wageRange = (maximum - minimum);
 
 // 4: Write a function that satifies the following interaction pattern:
 
+
+function checkStock(quanity,storeItems) {
+if (quanity ===0) {
+    console.log(`${storeItems} is Out of stock!`)
+}else if (quanity < 4){
+    console.log(`${storeItems} is running low!`)
+}else {
+    console.log(`${storeItems} is in stock!`)
+}
+}
 checkStock(4, "Coffee");
-// => "Coffee is stocked"
-
 checkStock(3, "Tortillas");
-// => "Tortillas - running LOW"
-
 checkStock(0, "Cheese");
-// => "Cheese - OUT of stock!"
-
 checkStock(1, "Salsa");
-// => "Salsa - running LOW"
