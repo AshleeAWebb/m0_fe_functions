@@ -12,13 +12,13 @@ function nameQuestion() {
   console.log("Hello, what is your name?");
 }
 
-nameQuestion()
+nameQuestion();
 //Added semicolon to line 12 after the code block as it is the industry standard.
 
 // EX 2:
 function addThreeNums(first, second, third) {
-var sum = first + second + third;
-console.log(sum);
+  var sum = first + second + third;
+  console.log(sum);
 }
 
 addThreeNums(1, 2, 3);
