@@ -21,11 +21,11 @@ nameSelector("Linda");
 // name of the company and the range itself (if the numbers passed in are 90000 and 110000, the pay range is 20000).
 
 function reportPayWages(company, minimum, maximum) {
-var wageRange = maximum - minimum;
+    var wageRange = maximum - minimum;
     return `Here at ${company}, we start our employees wages off at about a $${wageRange} range.`;
 }
-    console.log(reportPayWages("Mars", 90000 ,100000));
-    console.log(reportPayWages("Disney",20000 ,70000));
+console.log(reportPayWages("Mars", 90000 ,100000));
+console.log(reportPayWages("Disney",20000 ,70000));
 
 
 
@@ -33,13 +33,13 @@ var wageRange = maximum - minimum;
 
 
 function checkStock(quanity,storeItems) {
-if (quanity ===0) {
+    if (quanity ===0) {
     console.log(`${storeItems} is Out of stock!`)
-}else if (quanity < 4){
+    } else if (quanity < 4){
     console.log(`${storeItems} is running low!`)
-}else {
+    } else {
     console.log(`${storeItems} is in stock!`)
-}
+    }
 }
 checkStock(4, "Coffee");
 checkStock(3, "Tortillas");
